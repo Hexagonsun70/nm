@@ -1,0 +1,52 @@
+@use '../abstracts' as *;
+
+.ab-wrapper--mod {
+	background-color: $dark-bg;
+}
+
+.about--mod {
+	font-family: poppins;
+  /* background-image: url(img/about.png); */
+  color: white;
+	padding: 50px 15px;
+}
+
+.about--title {
+	font-size: 36px;
+	line-height: 40px;
+	letter-spacing: 0.4px;
+	margin-top: -6px;
+	margin-bottom: 28px;
+}
+
+.about--strong {
+	font-family: poppins-bold;
+}
+
+.about--p {
+	margin-bottom: 25px;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.4px;
+}
+
+.culture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+  color: $dark-bg;
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 35px;
+	letter-spacing: 0.4px;
+	width: 180px;
+	height: 50px;
+  margin: 5px;
+	padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.culture:hover {
+	background-color: #ebebeb;
+}

@@ -1,0 +1,119 @@
+@use '../abstracts' as *;
+
+.client-bar {
+  padding:    50px 0;
+  box-shadow: top;
+  display:    none;
+  flex-wrap:  wrap;
+}
+
+.client-parent {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-around;
+}
+
+.client-img {
+  box-sizing: content-box;
+  position: relative;
+}
+
+.box--shadow-client {
+  width:      100%;
+  height: auto;
+  box-shadow: inset 0 0 20px $input-bg;
+}
+
+// These two rules makes the b&w image visible and the coloured invisible.
+
+.bw-img {
+  display: inline-block;
+}
+
+.colour-img {
+  display: none;
+}
+
+// This hover rule switches out the b&w imgs for coloured
+// and also allows the tooltip box and arrow to appear
+
+.client-img:hover {
+  .bw-img {
+    display: none;
+  }
+  .colour-img {
+    display: inline-block;
+  }
+  .arrow-box {
+    visibility: visible;
+  }
+  .arrow {
+    visibility: visible;
+  }
+}
+
+// Tooltip Rules
+
+.arrow-box, .arrow{
+  visibility: hidden;
+  position:  absolute;
+  left:      50%;
+  top:       -.25rem;
+}
+
+.arrow-box {
+  transform: translateY(-125%)
+             translateX(-50%);
+  width:       260px;
+  height:      auto;
+  padding:     20px;
+  font-family: poppins;
+  text-align:  center;
+  color:       white;
+  background:  $dark-bg;
+}
+
+.arrow {
+
+  transform: translateY(-74%)
+             translateX(-50%);
+
+  border:           30px solid transparent;
+  border-top-color: $dark-bg;
+}
+
+// Having separate translations isn't the smoothest solution, but its a quick
+// fix that will work as a substitute for calc() (not using calc because
+// it isnt ie compatible).
+
+.arrow-box2 {
+  transform: translateY(-130%)
+             translateX(-50%);
+}
+
+.arrow2 {
+  transform: translateY(-66%)
+             translateX(-50%);
+}
+
+
+
+
+.client-img h3 {
+  letter-spacing: 0.4px;
+  line-height:    20px;
+  font-size:      18px;
+}
+
+.tt-line {
+  border-bottom: white 3px solid;
+  width:         28px;
+  display:       inline-block;
+  margin:        10px 0;
+}
+
+.client-img p {
+  line-height:    22px;
+  letter-spacing: 0.4px;
+  font-size:      13px;
+}

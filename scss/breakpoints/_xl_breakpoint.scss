@@ -1,0 +1,170 @@
+// XL Screen size: > 1260px
+// width of elements should be 1170 to 1200 to centrally align
+
+//----------------------------------------------------------------------------//
+
+// Increases the size of the header wrapper, makes the search-field visible,
+// makes the corners of the button uncurved and flush with the search-field.
+
+@media (min-width:1260px) {
+  .header-wrapper {
+    width: 1170px;
+  }
+
+  .search-field {
+    display: inline-block;
+    width: 77%
+  }
+  .search-btn {
+    border-radius: 0 3px 3px 0;
+    width: 23%
+  }
+}
+
+// enlarges the width of the navbar elements and increases the font size of the
+// list items
+
+@media (min-width:1260px) {
+  .bar-child {
+    width: 195px;
+  }
+  .horizontal-list li {
+      font-size:      1rem;
+      line-height: 2.813rem;
+  }
+  .table {
+    width:   1170px;
+  }
+}
+
+// resizes the carousel text/button div
+
+@media (min-width:1260px) {
+  .caro-box {
+    width: 1170px;
+  }
+}
+
+// Expands the width of the containing div (.info-boxes). creates a break to
+// organise the flex items. re-sizes them all so they fit.
+
+@media (min-width:1260px) {
+  .info-boxes {
+    width: 1170px;
+  }
+  .flex-break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+  #tele-anchor,
+  #web-anchor,
+  #cyber-anchor,
+  #developer-anchor {
+    width: 25%;
+  }
+
+  .three-flex,
+  .four-flex {
+    height: 312px;
+  }
+}
+
+// Uses flex to divide the central container of the about section to divide
+// it into two pieces (.aboutchild- width 50% ). Changes the background size
+// of the nm background logo so that it takes up the whole section.
+
+@media (min-width:1260px) {
+  .about-flex {
+    display: flex;
+    width: 1170px;
+  }
+  .about-child {
+    width: 50%;
+  }
+
+  .ab-wrapper--mod {
+    background-size: contain;
+  }
+}
+
+// Resizes the span & line container and news box container to fit the new
+// layout at this breakpoint. Makes the third news box display.
+
+@media (min-width:1260px) {
+  .span-n-line {
+    width: 1170px;
+  }
+  .card-container {
+    width: 1170px;
+  }
+
+  .news-card-3 {
+    display: flex;
+  }
+  .news-info .read-more {
+    margin-top: 20px
+  }
+
+
+}
+
+// Resizes the client bar container to be inline with the new layout.
+// Changes the width of the images so they
+
+@media (min-width: 1260px) {
+  .client-parent-wrapper {
+    width: 1170px;
+  }
+  .busseys,
+  .crane,
+  .beat,
+  .northern-d {
+    width: auto;
+  }
+}
+
+// Resize the width of the sign up section
+
+@media (min-width:1260px) {
+  .sign-up {
+    width: 1170px;
+  }
+}
+
+// Footer Info parent/flex child resizing.
+
+@media (min-width:1260px) {
+  .footer-rows {
+    justify-content: center;
+    width: 1200px;
+  }
+  .contact-about__child,
+  .website-social__child {
+    width: 25%
+  }
+}
+
+// Resize badges at XL Breakpoint and changes their layout.
+
+@media (min-width: 1260px) {
+  .badge-wrapper {
+    width: 1200px;
+    height: 166px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .badge-img {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .micrsoft,
+  .future,
+  .qms,
+  .nfc,
+  .btm-badge-img {
+    width:  auto;
+    height: auto;
+  }
+}

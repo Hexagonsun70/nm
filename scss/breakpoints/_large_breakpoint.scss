@@ -1,0 +1,278 @@
+@use '../abstracts' as *;
+// Large Screen Breakpoint: > 992px & < 1260px
+
+//----------------------------------------------------------------------------//
+
+// expands the wrapper for the whole header, hides the search field, curves off
+// the sharp edges of the search button and adds the support & contact button.
+// styles the buttons
+
+@media (min-width:992px) {
+  .header-wrapper {
+    width: 950px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header-flex {
+    justify-content: flex-start;
+  }
+
+  .logo-box {
+    margin-right: auto;
+  }
+
+  .search-field {
+    display: none;
+  }
+  .search-btn {
+    width: 56px;
+    border-radius: 3px;
+  }
+
+
+  .hdr-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+  }
+
+  .hdr-btn-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    border-radius: 3px;
+    padding: 5px 15px;
+    width: 145px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .support-btn {
+    background-color: #4183d7;
+    margin-right: 15px;
+  }
+
+  .contact-btn {
+    background-color: #999aa2;
+    width: 145px;
+    margin-right: 15px;
+    color: white;
+  }
+
+  .support-btn:hover {
+    background-color: $it-col-drk;
+  }
+
+  .contact-btn:hover {
+    background-color: #84858f;
+  }
+
+  .search-2 {
+  }
+
+}
+
+// Makes the nav-bar.
+
+@media (min-width: 992px) {
+  .nav-bar {
+    display: flex;
+  }
+}
+
+// aligns the carousel text to the left of the div, rather than the centre
+
+@media (min-width: 992px) {
+  .caro-title,
+  .caro-p {
+    text-align: left;
+  }
+  .caro-link {
+    margin-left: 0;
+  }
+}
+
+// Align the first three info boxes in a row, size them so there is no content
+// overflow
+
+@media (min-width: 992px) {
+  #bespoke-anchor,
+  #it-anchor,
+  #marketing-anchor {
+    // // flex: 1;
+    width: 33.3%
+  }
+
+  .four-flex {
+    height: 312px;
+  }
+
+  .info-boxes {
+    width: 970px;
+  }
+}
+
+// Make the netmatters logo appaer size the container.
+
+@media (min-width: 992px) {
+    .ab-wrapper--mod {
+       background-image: url(../img/about.png);
+       background-repeat: no-repeat;
+       background-position: 100%;
+       background-size: cover;
+    }
+
+    .about-flex {
+      width: 970px;
+    }
+}
+
+// Resize the news cards
+
+@media (min-width: 992px) {
+  .span-n-line {
+    width: 970px;
+  }
+  .card-container {
+    width: 970px;
+    padding: 0;
+  }
+
+  .news-info .read-more {
+    margin-top: 8px
+  }
+
+}
+
+// Resize the client badges to fit the screen.
+
+@media (min-width: 992px) {
+  .client-parent-wrapper {
+    width: 970px;
+  }
+
+  .client-parent {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .busseys {
+    width: 168.75px;
+  }
+
+  .crane {
+    width: 257.61px;
+  }
+
+  .beat {
+    width: 64.63px;
+  }
+
+  .northern-d {
+    width: 289.02px;
+  }
+
+}
+
+
+// Make the two input fields align one one line. makes a section container
+
+@media (min-width:992px) {
+  .sign-up-section {
+    background-color: $input-bg;
+    display:          flex;
+    justify-content:  center;
+  }
+  .sign-up {
+    width: 940px;
+  }
+
+  .input-name,
+  .input-email {
+    width: 100%;
+  }
+
+  .your-email {
+    margin-left: 15px;
+  }
+
+  .input-field {
+    width:  100%;
+    height: 45px;
+    border: #777;
+    padding: 0 15px;
+  }
+
+  .input-field1 {
+    margin-right: 15px;
+  }
+
+  .input-field2 {
+    margin-left: 15px;
+  }
+
+  .input-container {
+    display:         flex;
+    justify-content: center;
+  }
+
+}
+
+
+// Footer Info parent/flex child resizing.
+
+@media (min-width:992px) {
+  .footer-rows {
+    width: 970px;
+
+  }
+  .contact-about__child,
+  .website-social__child {
+    width: 50%;
+  }
+
+}
+
+
+// Resize badges for large breakpoint
+
+@media only screen and (min-width: 996px) {
+
+  .badge-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .badge-parent {
+    width: 970px;
+  }
+  .micrsoft {
+    width: 140.2px;
+    height: 85.33px;
+  }
+
+  .future {
+    width: 69px;
+    height: 110.09px;
+  }
+
+  .qms {
+     width: 85.2px;
+     height: 99.39px;
+  }
+
+  .nfc {
+     width: 200.2px;
+     height: 80.08px;
+  }
+
+  .btm-badge-img {
+    width: 273.33px;
+  }
+
+}

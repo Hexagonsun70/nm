@@ -1,0 +1,97 @@
+@use '../abstracts' as *;
+
+.footer-container {
+  font-family:      poppins;
+  letter-spacing:   0.4;
+  font-size:        13px;
+  line-height:      22px;
+  background-color: $dark-bg;
+  color:            white;
+  padding:          50px 0;
+
+}
+
+.footer-rows {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.about-list {
+  padding:         0;
+  list-style-type: none;
+  margin-bottom:   30px;
+  font-size:       13px;
+}
+
+.footer-title,
+.address,
+.contact-links,
+.list-title,
+.about-list,
+.website-section__title,
+.map-n-copy {
+  margin-bottom: 26px;
+  padding:       0 15px;
+}
+
+.social-title {
+  padding: 0 15px;
+}
+
+.footer-title {
+  font-size: 16px;
+}
+
+.link--style {
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.social-links {
+  font-size:      16px;
+  text-transform: uppercase;
+}
+
+.social-row {
+  align-content:   center;
+  display:         flex;
+  justify-content: space-around;
+  flex-wrap:       nowrap;
+}
+
+.social-a-container {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.social-container {
+  display:          flex;
+  justify-content:  center;
+  align-items:      center;
+  height:           55px;
+  margin-top:       30px;
+  background-color: $box-col;
+  font-size: 1.75rem;
+  color: white;
+  text-decoration: none;
+}
+
+.soc-con-1:hover {
+  background-color: $fb-blue;
+}
+
+.soc-con-2:hover {
+  background-color: $twitter-blue;
+}
+
+.soc-con-3:hover {
+  background-color: $linked-in-blue;
+}
+
+.soc-con-4 {
+  background-color: $dark-bg;
+}

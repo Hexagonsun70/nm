@@ -1,0 +1,298 @@
+@use "../abstracts" as *;
+
+.nav-bar {
+  display:          none;
+  align-items:      center;
+  justify-content:  center;
+  background-color: $dark-bg;
+  position:         relative;
+  height:           99px;
+}
+
+.bar-wrapper {
+  display:     flex;
+  align-items: flex-start;
+  font-family: poppins;
+}
+
+.child-wrapper {
+  display:         flex;
+  // justify-content: center;
+  align-items:     center;
+  width:           100%;
+}
+
+.bar-child {
+  display:        flex;
+  align-items:    center;
+  flex-direction: column;
+  height:         99px;
+  border-right:   0.5px solid $border-gry;
+  border-left:    0.5px solid  $border-blk;
+  color:          white;
+  padding:        19px 0;
+  width:          158.33px;
+}
+
+.bar-icon {
+  margin-bottom: 10px;
+}
+
+.left-child {
+  height:       99px;
+  border-right: 0.5px solid $border-gry;
+}
+
+.right-child {
+  height:       99px;
+  border-right: 0.5px solid $border-blk;
+}
+
+.bar-tt {
+  position:        absolute;
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  width:           100%;
+  top:             84%;
+  left:            0;
+  right:           0;
+  z-index:         10;
+}
+
+.spacer-left {
+  display: none;
+  width: 100%;
+  height: 45px;
+  margin: 16px 0;
+}
+
+.spacer-right {
+  display: none;
+   width: 100%;
+   height: 45px;
+   margin: 16px 0;
+}
+
+.table {
+  width:   949.98px;
+}
+
+.horizontal-list{
+  left: 0;
+  display:        none;
+  width:          950px;
+  padding:        0;
+  // margin-left: auto;
+  // margin-right: auto;
+  text-transform:    uppercase;
+  text-align:       left;
+  & li {
+    display:        inline;
+    font-size:      13px;
+    line-height:    45px;
+    letter-spacing: 0.4;
+    padding: 0;
+    text-align: left;
+
+
+  }
+}
+
+// Failed attempt at lining up the text in the drop down bar with the first
+// button.
+
+// .horizontal-list::before,
+// .horizontal-list::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+// }
+//
+// .horizontal-list::before {
+//   right: 100%;
+//   width: 2000px;
+// }
+//
+// .horizontal-list::after {
+//   left: 100%;
+//   width: 2000px;
+// }
+
+.sml-txt, .lrg-txt {
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  line-height:    18px;
+}
+
+.sml-txt {
+  font-size: 10px;
+  line-height: 1;
+}
+
+.lrg-txt {
+  font-size: 18px;
+}
+
+// These can probably be done with mixins, but couldn't figure out how to
+// implement one with so many differing variables.
+
+// $navs:(
+//     'web':'#334455',
+//     'it':'#445566',
+//     'telecoms':'#556677',
+//     'software':'#667788',
+//     'marketing':'#778899',
+// );
+//
+// @each $name $color in $navs {
+//   &--#{$name} {
+//     background-color: #{$color};
+//     }
+// }
+
+#web-bar-anchor:hover {
+	.bar-child {
+		background-color: $web-col;
+	}
+  .spacer-left {
+    display: block;
+    background-color: $web-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $web-col-drk;
+  }
+	.web-icon {
+		color: white;
+	}
+  #web-list {
+    display: block;
+    width: inherit;
+    background-color: $web-col-drk;
+    text-align: left;
+    padding: 0;
+  }
+  #web-spacer {
+    background-color: $web-col-drk;
+  }
+}
+
+#it-bar-anchor:hover {
+	.bar-child {
+		background-color: $it-col;
+	}
+  .spacer-left {
+    display: block;
+    background-color: $it-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $it-col-drk;
+  }
+	.it-icon {
+		color: white;
+	}
+  #it-list {
+    display: block;
+    width: inherit;
+    background-color: $it-col-drk;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+#tele-bar-anchor:hover {
+	.bar-child {
+		background-color: $tele-col;
+	}
+  .spacer-left {
+    display: block;
+    background-color: $tele-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $tele-col-drk;
+  }
+	.tele-icon {
+		color: white;
+	}
+  #tele-list {
+    display: block;
+    width: inherit;
+    background-color: $tele-col-drk;
+    text-align: left;
+  }
+}
+
+#bespoke-bar-anchor:hover {
+	.bar-child {
+		background-color: $bespoke-col;
+	}
+  .spacer-left {
+    display: block;
+    background-color: $bespoke-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $bespoke-col-drk;
+  }
+	.bespoke-icon {
+		color: white;
+	}
+  #bespoke-list {
+    display: block;
+    width: inherit;
+    background-color: $bespoke-col-drk;
+    text-align: left;
+  }
+}
+
+#cyber-bar-anchor:hover {
+	.bar-child {
+		background-color: $cyber-col;
+	}
+  .spacer-left {
+    display: block;
+    background-color: $cyber-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $cyber-col-drk;
+  }
+	.cyber-icon {
+		color: white;
+	}
+  #cyber-list {
+    display: block;
+    width: inherit;
+    background-color: $cyber-col-drk;
+    text-align: left;
+  }
+}
+
+#digi-bar-anchor:hover {
+	.bar-child {
+		background-color: $marketing-col;
+	}
+  .spacer-left {
+    display: block;
+    background-color: $marketing-col-drk;
+  }
+  .spacer-right {
+    display: block;
+    background-color: $marketing-col-drk;
+  }
+	.digi-icon {
+		color: white;
+	}
+
+  #digi-list {
+    display: block;
+    width: inherit;
+    background-color: $marketing-col-drk;
+    text-align: left;
+  }
+}

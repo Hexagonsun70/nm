@@ -1,0 +1,177 @@
+@use '../abstracts' as *;
+
+.header-carousel {
+	height: 100vh;
+}
+
+#nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: all .4s ease-in;
+	z-index: 80000;
+}
+
+#nav.hide {
+	top: -232px;
+	@media(min-width: 992){
+		top: -232px;
+	}
+}
+
+.h-space-wrapper {
+	display: flex;
+	background-color: white;
+}
+
+#header-spacer {
+	display: relative;
+	width: 100vw;
+	height: 180px;
+	@media(min-width: 768px){
+		height: 133px;
+	}
+	@media(min-width: 992px){
+		height: 232px;
+	}
+}
+
+.header-wrapper {
+	display: inline-block;
+	// display: flex;
+	padding: 20px 15px;
+	width:   100%;
+	height:  auto;
+	background-color: white;
+}
+
+.header-flex {
+  display:         flex;
+  justify-content: space-between;
+	align-items:     center;
+	height:          93px;
+	background-color: white;
+}
+
+.logo-box {
+	// margin:    10px auto 10px 10px;
+	width:     100%;
+	height:    auto;
+	max-width: 402px;
+	margin-right: 15px;
+}
+
+.img-shrink {
+	width:  100%;
+	height: 65px;
+}
+
+.phone-box {
+  font-size: 2rem;
+
+  // margin-top: 30px;
+	padding:         5px;
+	text-decoration: none;
+}
+
+.phone-box .fa-phone-alt {
+  /* makes the image wrap to the box size set in .phone box */
+  width:  100%;
+  height: auto;
+	color:  $dark-bg;
+}
+
+.fa-phone-alt:hover {
+	text-decoration: underline;
+}
+
+.burger-box {
+	display:          flex;
+	flex-wrap:        wrap;
+	justify-content:  center;
+  background-color: $dark-bg;
+  border-radius:    3px;
+  color:            white;
+  width:            60px;
+	height:           56px;
+	padding:          5px 15px;
+	cursor: pointer;
+	margin-left: 15px;
+  // margin-top: 19px;
+}
+
+.burger-bar {
+	background-color: white;
+	height: 3px;
+	width: 30px;
+	margin-bottom: 1px;
+}
+
+.bb-top {
+	margin-top: 4px;
+}
+
+.burger-box:hover {
+	background-color: #22242E;
+}
+
+.burger-div,
+.burger-flex-break,
+.burger-text,
+.burger-flex-break {
+	height: 0;
+}
+
+.burger-img-div {
+	height: 35px;
+}
+
+.burger-text {
+	align-self:     baseline;
+	text-align:     center;
+	font-family:    poppins;
+	text-transform: uppercase;
+	font-size:      12px;
+}
+
+.search {
+  width:               100%;
+  height:              47px;
+	border:              solid 2px #ccc;
+	background-image:    url(/img/search-icon.png);
+	box-shadow: inset    0px 1px 1px #ccc;
+	background-size:     25px;
+	background-repeat:   no-repeat;
+	background-position: 99% 50%;
+  background-color:    rgba(0,0,0,.1);
+	color:               #555;
+	font-family:         "poppins", sans-serif;
+
+
+
+
+}
+
+.search-fa {
+ font-size: 1.2rem;
+}
+
+.search-2 {
+	display: none;
+	background-color: white;
+}
+
+.hdr-btn-div {
+	display: none;
+}
+
+.search-field[type=text]  {
+  outline: none;
+  border: 1px solid #DDDDDD;
+	background-color: white;
+}
+
+.search-field[type=text]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}

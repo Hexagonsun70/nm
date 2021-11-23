@@ -1,0 +1,299 @@
+@use '../abstracts' as *;
+
+.carousel {
+	position: relative;
+	display: block;
+	background-color: white; 
+}
+
+// Info wrapper serves as a container to align the flex parent
+.info-wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
+	background-color: white;
+	// position: absolute;
+	// display: inline-block;
+	// transform: translateY(-30px);
+}
+
+// Anchor Wrapper determines that the flex elements may be laid out in.
+// Check Media queries for Changes in width.
+
+.info-boxes {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 60px;
+	width: 100%;
+	height: auto !important;
+	background-color: white;
+}
+
+.anchor-wrapper {
+	  margin: 30px 0 0;
+		display: flex;
+		width: 100%;
+}
+
+.anchor-wrapper .read-more:hover {
+	filter: none;
+}
+
+.info-anchor {
+  flex: 1;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width: inherit;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.info-box {
+  font-family: poppins;
+  color: black;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+	box-shadow: 5px 5px 30px $input-bg;
+  padding: 30px;
+  border: 1px solid $input-bg;
+	width: 100%;
+  border-radius: 3px;
+	height: 330px;
+}
+
+.info-icon {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info-title {
+  flex: 1;
+  flex-basis: 100%;
+  margin-bottom: 10px;
+	text-align: center;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 19.8px;
+}
+
+.break {
+	width: 50px;
+	fill: black;
+	height: 1px;
+}
+
+.line {
+	margin: 0px;
+}
+
+.text-span {
+  text-align: center;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  margin-bottom: 10px;
+  flex-basis: 100%;
+}
+
+.rule {
+	background-color: black;
+	width: 28px;
+	height: 3px;
+	margin-bottom: 10px;
+	border-color: 1px solid black;
+}
+
+.read-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 45px;
+	width: 125px;
+	border-radius: 4px;
+  font-size: 17px;
+  line-height: 35px;
+  letter-spacing: 0.4;
+  text-transform: uppercase;
+  color: white;
+}
+
+.read-text {
+	white-space: nowrap;
+	padding: 15px;
+}
+
+.fa-chart-bar,
+.fa-desktop,
+.fa-code,
+.fa-graduation-cap {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.fa-phone,
+.fa-shield-alt {
+	color: white;
+	font-size: 1.3rem;
+}
+
+.fa-th {
+	color: white;
+	font-size: 1.2rem;
+}
+
+#info-icon1, #read-more1 {
+  background-color: $bespoke-col;
+}
+
+#info-icon2, #read-more2{
+  background-color: $it-col;
+}
+
+#info-icon3, #read-more3 {
+  background-color: $marketing-col;
+}
+
+#info-icon4, #read-more4 {
+  background-color: $tele-col;
+}
+
+#info-icon5, #read-more5 {
+  background-color: $web-col;
+}
+
+#info-icon6, #read-more6 {
+  background-color: $cyber-col;
+}
+
+#info-icon7, #read-more7 {
+  background-color: $web-col;
+}
+
+// I think a mixin replacing the hover rules for info-boxes would work, but I
+// couldn't figure out how to do it.
+
+#bespoke-anchor:hover {
+	.info-box {
+		background-color: $bespoke-col;
+		color: white;
+	}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
+	#info-icon1, #read-more1 {
+		background-color: white;
+		color: $bespoke-col;
+	}
+	.fa-th {
+		color: $bespoke-col;
+	}
+}
+
+#it-anchor:hover {
+	.info-box {
+		background-color: $it-col;
+		color: white;
+	}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
+	#info-icon2, #read-more2 {
+		background-color: white;
+		color: $it-col;
+	}
+	.fa-desktop {
+		color: $it-col;
+	}
+}
+
+#marketing-anchor:hover {
+	.info-box {
+		background-color: $marketing-col;
+		color: white;
+	}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
+	#info-icon3, #read-more3 {
+		background-color: white;
+		color: $marketing-col;
+	}
+	.fa-chart-bar {
+		color: $marketing-col;
+	}
+}
+
+#tele-anchor:hover {
+	.info-box {
+		background-color: $tele-col;
+		color: white;
+	}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
+	#info-icon4, #read-more4 {
+		background-color: white;
+		color: $tele-col;
+	}
+	.fa-phone {
+		color: $tele-col;
+	}
+}
+
+#cyber-anchor:hover {
+	.info-box {
+		background-color: $cyber-col;
+		color: white;
+	}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
+	#info-icon6, #read-more6 {
+		background-color: white;
+		color: $cyber-col;
+	}
+	.fa-shield-alt {
+		color: $cyber-col;
+	}
+}
+
+.purple-anchor:hover {
+	.info-box {
+		background-color: $web-col;
+		color: white;
+	}
+	.rule {
+		background-color: white;
+		border: solid 1px white;
+	}
+	#info-icon5, #info-icon7,
+	#read-more5, #read-more7 {
+		background-color: white;
+		color: $web-col;
+	}
+	.fa-code, .fa-graduation-cap {
+		color: $web-col;
+	}
+}

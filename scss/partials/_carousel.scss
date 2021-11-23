@@ -1,0 +1,159 @@
+@use '../abstracts' as *;
+
+.carousel {
+font-family: poppins;
+color: white;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 40px;
+}
+
+.caro-title {
+  text-transform: uppercase;
+  font-size: 48px;
+  margin: 0px 0px 25px;
+}
+
+.text-button {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.caro-box {
+  width: 940px;
+}
+
+.caro-p {
+margin: 0px 0px 35px;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.4px;
+}
+
+.caro-link {
+background-color: $web-col;
+text-transform: uppercase;
+color: white;
+margin: auto;
+width: 225px;
+padding: 20px;
+border-radius: 5px;
+}
+
+.fa-arrow-right {
+margin-right: -10px;
+margin-left: 8px;
+font-size: 1.2rem;
+}
+
+#caro-link1 {
+  background-color: $web-col;
+}
+
+#caro-link2 {
+  background-color: $it-col;
+}
+
+#caro-link3{
+  background-color: $tele-col;
+}
+
+#caro-link4 {
+  background-color: $bespoke-col;
+}
+
+#caro-link5 {
+  background-color: $marketing-col;
+  width: 350px;
+}
+
+#caro-link6 {
+  background-color: $cyber-col;
+}
+
+#caro-link1:hover {
+  background-color: $web-col-drk;
+}
+
+#caro-link2:hover {
+  background-color: $it-col-drk;
+}
+
+#caro-link3:hover {
+  background-color: $tele-col-drk;
+}
+
+#caro-link4:hover {
+  background-color: $bespoke-col-drk;
+}
+
+#caro-link5:hover {
+  background-color: $marketing-col-drk;
+  width: 350px;
+}
+
+#caro-link6:hover {
+  background-color: $cyber-col-drk;
+}
+
+#caro1 {
+  background: linear-gradient(270deg,transparent 25%,#000), url(../img/carousel/web-design.jpg);
+
+}
+
+#caro2 {
+  background: linear-gradient(270deg,transparent 25%,#000), url(../img/carousel/it-support.jpg);
+}
+
+#caro3 {
+  background: linear-gradient(270deg,transparent 25%,#000), url(../img/carousel/telecoms-services.jpg);
+}
+
+#caro4 {
+  background: linear-gradient(270deg,transparent 25%,#000), url(../img/carousel/bespoke-software.jpg);
+}
+
+#caro5 {
+  background: linear-gradient(270deg,transparent 25%,#000), url(../img/carousel/digital-marketing.jpg);
+}
+
+#caro6 {
+  background: linear-gradient(270deg,transparent 25%,#000), url(../img/carousel/cyber-security.jpg);
+}
+
+/* Combinant Selectors */
+#caro1,
+#caro2,
+#caro3,
+#caro4,
+#caro5,
+#caro6 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 20px;
+}
+
+#caro1,
+#caro2,
+#caro3,
+#caro4,
+#caro5,
+#caro6 {
+  height: calc(100vh - 180px);
+
+  @media (min-width:768px) {
+    height: calc(100vh - 133px);
+  }
+
+  @media (min-width:992px) {
+    height: calc(100vh - 232px);
+  }
+
+  @media (min-width:1260px) {
+    height: calc(100vh - 232px);
+  }
+}

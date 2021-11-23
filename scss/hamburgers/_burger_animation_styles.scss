@@ -1,0 +1,37 @@
+.hamburger-mask {
+  display:                    block;
+  right:                      0;
+  position:                   fixed;
+  width:                      calc(100vw - (100vw - 100%));
+  height:                     100vh;
+  background-color:           rgba(0,0,0,.7);
+  z-index:                    90002;
+  cursor:                     pointer;
+  border:                     none;
+  padding:                    0;
+  transition:                 background-color 0.3s,
+                              transform 0.4s;
+  transition-timing-function: ease-in;
+}
+
+.mask-click {
+  transition:                   background-color 0.3s,
+                                transform 0.4s;
+    transition-timing-function: ease-in;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.burger-shift-left {
+  transform:                  translateX(-275px);
+  transition:                 transform 0.4s;
+  transition-timing-function: ease-in;
+}
+
+.burger-shift-right {
+  transform:                  translateX(0);
+  transition:                 transform 0.4s;
+  transition-timing-function: ease-in;
+}
